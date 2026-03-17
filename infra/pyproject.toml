@@ -1,0 +1,18 @@
+[project]
+name = "rpj-dummy-infra"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pulumi>=3.0",
+    "pulumi-cloudflare>=5.0",
+    "pulumi-docker>=4.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

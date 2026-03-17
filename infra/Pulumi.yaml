@@ -1,0 +1,5 @@
+name: rpj-dummy-infra
+runtime:
+  name: python
+  options:
+    toolchain: uv
