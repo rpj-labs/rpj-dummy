@@ -34,6 +34,8 @@ agent-memory-research/
 │   ├── mem0.md                            ← Mem0: universal memory layer
 │   ├── langgraph-memory.md               ← LangGraph: checkpointing and stores
 │   ├── graphiti.md                        ← Graphiti / Neo4j: graph-native memory
+│   ├── mempalace.md                       ← MemPalace: spatial/hierarchical memory (April 2026)
+│   ├── anthropic-memory-tools.md         ← Anthropic: CLAUDE.md, memory tool API, auto-dream
 │   └── frameworks-comparison.md          ← Side-by-side comparison table
 │
 ├── 03-storage-backends/
@@ -63,6 +65,7 @@ agent-memory-research/
 └── 07-emerging-research/
     ├── reinforcement-learning-memory.md ← RL-optimized memory operations
     ├── context-engineering.md          ← ACE, compaction APIs, summarization
+    ├── karpathy-llm-wiki.md            ← Karpathy's LLM Knowledge Base pattern (April 2026)
     └── future-directions.md            ← What 2026–2027 looks like
 ```
 
@@ -71,10 +74,11 @@ agent-memory-research/
 ## Key Takeaways (TL;DR)
 
 1. **Four memory types dominate**: Working (in-context), Episodic (what happened), Semantic (what I know), Procedural (how to act). Most production systems implement all four at some level.
-2. **Three major frameworks**: Letta (OS model), Mem0 (universal layer), LangGraph (graph-checkpointed state). Each suits different use cases.
+2. **Five major frameworks**: Letta (OS model), Mem0 (universal layer), LangGraph (graph-checkpointed state), MemPalace (spatial/hierarchical, April 2026), Anthropic native tools (CLAUDE.md + memory API).
 3. **Storage is a three-way combination**: vector DB for semantic search, knowledge graph for relational facts, key-value store for fast session state.
 4. **The hard problems are temporal**: stale facts, contradiction detection, and memory drift are harder than retrieval.
 5. **Benchmarks are behind**: most existing benchmarks predate 1M-token context windows and are being replaced.
+6. **Two new patterns (April 2026)**: MemPalace's verbatim-first spatial hierarchy and Karpathy's LLM Wiki "compile your knowledge" pattern both challenge extraction-first orthodoxy.
 
 ---
 
